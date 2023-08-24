@@ -29,7 +29,13 @@ Node * createNode(void * data) {
 }
 
 List * createList() {
-  
+  List * newList = (List*)calloc(1, sizeof(List));
+
+  if (newList == NULL)
+  {
+    fprintf(stderr,"Error: No se pudo reservar memoria para la lista.\n");
+    exit(EXIT_FAILURE);
+  }
      return NULL;
 }
 
