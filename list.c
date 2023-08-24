@@ -28,7 +28,7 @@ Node * createNode(void * data) {
     return new;
 }
 
-List * createList(int ) {
+List * createList() {
   
      return NULL;
 }
