@@ -103,3 +103,9 @@ Fri 25 Aug 2023 01:13:31 AM UTC:
  tests:  2|5
 total_score: 10/70
 f658051
+Fri 25 Aug 2023 01:15:07 AM UTC: 
+ list.c | 11 +++--------
+ 1 file changed, 3 insertions(+), 8 deletions(-)
+ tests:  5|4
+total_score: 20/70
+7edc442
