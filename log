@@ -109,3 +109,13 @@ Fri 25 Aug 2023 01:15:07 AM UTC:
  tests:  5|4
 total_score: 20/70
 7edc442
+Fri 25 Aug 2023 01:17:20 AM UTC: 
+ list.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:51:70: error: expected identifier before ‘==’ token
+   51 |   if (list->current == NULL || list->current->prev == NULL || list-> == NULL)
+      |                                                                      ^~
+Compilation failed
+2db4874
