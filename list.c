@@ -62,16 +62,9 @@ void * lastList(List * list) {
     return NULL;
   }
 
-  Node *currentNode = list->head;
+  list->current = list->tail;
 
-  while(currentNode->next != NULL)
-  {
-    currentNode = currentNode->next;
-  }
-
-  list->current = currentNode;
-
-  return &(currentNode->data);
+  return list->current->data
 }
 
 void * prevList(List * list) {
