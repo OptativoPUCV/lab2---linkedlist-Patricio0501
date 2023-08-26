@@ -81,6 +81,15 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
+  struct Node* newNode = (struct Node*)malloc(sizeof(struct, Node));
+
+  if (newNode == NULL)
+  {
+    return NULL;
+  }
+  
+    
+  
 }
 
 void pushBack(List * list, void * data) {
