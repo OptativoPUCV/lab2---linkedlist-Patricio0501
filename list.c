@@ -87,8 +87,10 @@ void pushFront(List * list, void * data) {
   {
     exit(EXIT_FAILURE);
   }
-  
-    
+
+  newNode->data = data;
+  newNode->next = list->head;
+  list->head = newNode;
   
 }
 
