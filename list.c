@@ -137,7 +137,11 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    return NULL;
+    if (list->current == NULL)
+    {
+      return NULL;
+    }
+    
     struct Node* currentNode = list->current;
     void* data = currentNode->data;
 
