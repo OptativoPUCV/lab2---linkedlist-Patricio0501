@@ -80,18 +80,16 @@ void * prevList(List * list) {
     return list->current->data;
 }
 
-void pushFront(List * list, void * Newdata) {
-  struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
-
-  if (newNode == NULL)
-  {
-    exit(EXIT_FAILURE);
-  }
-
-  newNode->data = Newdata;
-  newNode->next = list->head;
-  list->head = newNode;
-  
+void pushFront(struct List* list, void* newData) 
+{
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    if (newNode == NULL) {
+        fprintf(stderr, "Error: No se pudo asignar memoria para el nuevo nodo.\n");
+        exit(EXIT_FAILURE);
+    }
+    newNode->data = newData;
+    newNode->next = list->head;
+    list->head = newNode;
 }
 
 void pushBack(List * list, void * data) {
