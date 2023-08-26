@@ -178,3 +178,16 @@ Sat 26 Aug 2023 01:43:11 AM UTC:
  tests:  9|3
 total_score: 35/70
 dad4e6f
+Sat 26 Aug 2023 01:47:27 AM UTC: 
+ list.c | 15 ++++++---------
+ 1 file changed, 6 insertions(+), 9 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:87:26: error: ‘struct Node’ has no member named ‘head’
+   87 |   newNode->next = newNode->head;
+      |                          ^~
+list.c:88:10: error: ‘struct Node’ has no member named ‘head’
+   88 |   newNode->head = newNode;
+      |          ^~
+Compilation failed
+b4c2593
