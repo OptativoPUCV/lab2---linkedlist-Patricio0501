@@ -191,3 +191,9 @@ list.c:88:10: error: ‘struct Node’ has no member named ‘head’
       |          ^~
 Compilation failed
 b4c2593
+Sat 26 Aug 2023 01:55:47 AM UTC: 
+ list.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+ tests:  9|3
+total_score: 35/70
+b68b3dc
