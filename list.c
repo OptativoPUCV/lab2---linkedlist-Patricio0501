@@ -83,9 +83,10 @@ void * prevList(List * list) {
 void pushFront(List * list, void * data) {
   struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
 
-  newNode = data;
-  newNode->data = newNode->next;
-  newNode->next = newNode;
+    newNode->data = data;
+    newNode->next = list->head;
+    list->head = newNode;
+  
   
 }
 
