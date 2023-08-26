@@ -81,13 +81,19 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
-  struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+  Node *newNode = createNode(data);
 
-    newNode->data = data;
-    newNode->next = list->head;
+  if (list->head == NULL)
+  {
     list->head = newNode;
-  
-  
+    list->tail = newNode; 
+  }
+  else
+  {
+    newNode->next = list->head;
+    list->head->prev = newNode;
+    list->head = newNode;
+  }
 }
 
 void pushBack(List * list, void * data) {
