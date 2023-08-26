@@ -80,7 +80,7 @@ void * prevList(List * list) {
     return list->current->data;
 }
 
-void pushFront(List * list, void * data) {
+void pushFront(List * list, void * Newdata) {
   struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
 
   if (newNode == NULL)
@@ -88,7 +88,7 @@ void pushFront(List * list, void * data) {
     exit(EXIT_FAILURE);
   }
 
-  newNode->data = data;
+  newNode->data = Newdata;
   newNode->next = list->head;
   list->head = newNode;
   
